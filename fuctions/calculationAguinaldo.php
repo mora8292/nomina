@@ -5,6 +5,6 @@
 7.500 pesos es lo que recibirá el trabajador como aguinaldo navideño. -->
 <?php
 function calcularAguinaldo(){
-    echo 'Hola, se esta calculando';
+    echo 'Hola, se esta calculando 2';
 }
 ?>
