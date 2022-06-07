@@ -1,0 +1,42 @@
+
+
+#container {
+  display: flex;
+  flex-direction: column;
+}
+
+#containerDatesUser {
+    width: auto;
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+}
+
+#containerDatesCompany {
+    display: flex; 
+    flex-direction: row;
+}
+
+.containerD {
+    background: grey;
+    /*Arriba | Derecha | Abajo | Izquierda*/
+    margin: 10px auto 30px auto;
+    width: 70%;
+    height: 50%;
+  }
+
+.subDate {
+    display: flex;
+    flex-direction: column;
+}
+
+.subDate label, input {
+    margin-top: 6px;
+    margin-right: 30px;
+    color: black;
+    height: 10%;
+}
+
+
+

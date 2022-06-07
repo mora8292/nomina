@@ -1,0 +1,55 @@
+body {
+    background-image: url("img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#principal-content{
+    display: flex;
+    height: 550px;
+    background: transparent;
+}
+
+  /*Grid*/
+
+#buttons-menu, #names-students, #information-roles {
+    background-color:rgba(255, 149, 0, 0.407);
+  border-color: black;
+  margin: auto;
+  width: 400px;
+  height: 500px;
+
+  display: flex;
+  flex-direction: column;
+
+  /* Eje x de la caja flexible*/
+  align-items: center;
+  /* Eje y de la caja flexible*/
+  justify-content: center;
+}
+
+.button-option-menu {
+  margin: 20px;
+  width: 300px;
+  height: 50px;
+  background: black;
+  color: white;
+  font-size: 15px;  
+  border-radius: 40px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.button-option-menu:hover{
+  background: wheat;
+  color: black;
+  font-size: 17px;
+  transition: 1s;
+}
+.tittle-containers{
+    font-size: 35px;
+    color: black;
+}
+
+h3{
+    color: black;
+}

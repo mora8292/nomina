@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    </style>
+</head>
+<body>
+    <form action="pruebaVAlidacion.html" method="get">
+        <input class="fecha" type="date" name="inicio" min="1947-01-01">
+        <input id="fecha" type="date" name="final" min="1947-01-01" >
+        <input type="text" title="coloque un correo electronico real" placeholder="ej: ejemplo@gmail.com" pattern="(?!(^[.-].*|[^@]*[.-]@|.*\.{2,}.*)|^.{254}.)([a-zA-Z0-9!#$%&'*+\/=?^_`{|}~.-]+@)(?!-.*|.*-\.)([a-zA-Z0-9-]{1,63}\.)+[a-zA-Z]{2,15}">
+        <button type="submit">subir</button>
+    </form>
+    <script>
+let date = new Date();
+let output = String(date.getFullYear()).padStart(2, '0') + '-' + String(date.getMonth() + 1).padStart(2, '0') + '-' + date.getDate();
+console.log(output);
+
+        let a=document.querySelector(".fecha")
+        let a1=document.querySelector("#fecha")
+
+        a.setAttribute("max",output)
+        a1.setAttribute("max",output)
+
+        let email="ejemplo@yahoo.com"
+
+        let regExp=/[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/g;
+
+        let emailOk= regExp.test(email);
+
+        console.log(emailOk);
+
+    </script>
+</body>
+</html>
